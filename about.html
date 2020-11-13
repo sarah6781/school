@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Bootstrap 4 Navbar Fixed to Top</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  
+  <style>
+    body {
+        margin: 0;
+        padding: 0;
+       
+      }
+
+
+      .form-style-9{
+	max-width: 450px;
+	background: #FAFAFA;
+	padding: 30px;
+	margin: 160px auto;
+	box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+	border-radius: 10px;
+	border: 6px solid #305A72;
+}
+.form-style-9 ul{
+	padding:0;
+	margin:0;
+	list-style:none;
+}
+.form-style-9 ul li{
+	display: block;
+	margin-bottom: 10px;
+	min-height: 35px;
+}
+.form-style-9 ul li  .field-style{
+	box-sizing: border-box; 
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box; 
+	padding: 8px;
+	outline: none;
+	border: 1px solid #B0CFE0;
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+
+}.form-style-9 ul li  .field-style:focus{
+	box-shadow: 0 0 5px #B0CFE0;
+	border:1px solid #B0CFE0;
+}
+.form-style-9 ul li .field-split{
+	width: 49%;
+}
+.form-style-9 ul li .field-full{
+	width: 100%;
+}
+.form-style-9 ul li input.align-left{
+	float:left;
+}
+.form-style-9 ul li input.align-right{
+	float:right;
+}
+.form-style-9 ul li textarea{
+	width: 100%;
+	height: 100px;
+}
+.form-style-9 ul li input[type="button"], 
+.form-style-9 ul li input[type="submit"] {
+	-moz-box-shadow: inset 0px 1px 0px 0px #3985B1;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #3985B1;
+	box-shadow: inset 0px 1px 0px 0px #3985B1;
+	background-color: #216288;
+	border: 1px solid #17445E;
+	display: inline-block;
+	cursor: pointer;
+	color: #FFFFFF;
+	padding: 8px 18px;
+	text-decoration: none;
+	font: 12px Arial, Helvetica, sans-serif;
+}
+.form-style-9 ul li input[type="button"]:hover, 
+.form-style-9 ul li input[type="submit"]:hover {
+	background: linear-gradient(to bottom, #2D77A2 5%, #337DA8 100%);
+	background-color: #28739E;
+}
+    
+
+
+
+
+*{
+	padding:0;
+	margin:0;
+}
+
+
+
+
+
+
+* {
+    box-sizing: border-box;
+    font-family: ’Lato’, sans-serif;
+    margin: 0; 
+    padding: 0;
+}
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+footer {
+    background-color: #555;
+    color: #bbb;
+    line-height: 1.5;
+}
+footer a {
+    text-decoration: none;
+    color: #eee;
+}
+a:hover {
+    text-decoration: underline;
+}
+.ft-title {
+    color: #fff;
+    font-family: ’Merriweather’, serif;
+    font-size: 1.375rem;
+    padding-bottom: 0.625rem;
+}
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+.container {
+    flex: 1;    /* same as flex-grow: 1; */
+}
+.ft-main {
+    padding: 1.25rem 1.875rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.ft-main-item {
+    padding: 1.25rem;
+    min-width: 12.5rem /*200px*/;
+}
+@media only screen and (min-width: 29.8125rem /*477px*/) {
+    .ft-main {
+        justify-content: space-around;
+    }
+}
+@media only screen and (min-width: 77.5rem /*1240px*/ ) {
+    .ft-main {
+        justify-content: space-evenly;
+    }
+}
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+input[type="email"] {
+    border: 0;
+    padding: 0.625rem;
+    margin-top: 0.3125rem;
+}
+input[type="submit"] {
+    background-color: #00d188;
+    color: #fff;
+    cursor: pointer;
+    border: 0;
+    padding: 0.625rem 0.9375rem;
+    margin-top: 0.3125rem;
+}
+.ft-social {
+    padding: 0 1.875rem 1.25rem;
+}
+.ft-social-list {
+    display: flex;
+    justify-content: center;
+    border-top: 1px #777 solid; 
+    padding-top: 1.25rem;
+}
+.ft-social-list li {
+    margin: 0.5rem;
+    font-size: 1.25rem;
+}
+.ft-legal {
+    padding: 0.9375rem 1.875rem;
+    background-color: #333;
+}
+.ft-legal-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.ft-legal-list li {
+    margin: 0.125rem 0.625rem;
+    white-space: nowrap;
+}
+/* one before the last child */
+.ft-legal-list li:nth-last-child(2) {
+    flex: 1;       /* same as flex-grow: 1; */
+}
+
+  </style>
+</head>
+<body>
+  <!--nav start-->
+  <nav class="navbar navbar-expand-lg navbar-fixed-top bg-dark navbar-dark">
+    <a class="navbar-brand" href="/">
+      <img class="site-logo" src="./image/logo-new.png" style='max-width:100px'>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"><a href="./" class="nav-item nav-link active">Home</a></li>
+        <li class="nav-item"><a href="./classes.html" class="nav-item nav-link">Classes</a></li>
+        <li class="nav-item"><a href="./syllabus.html" class="nav-item nav-link">Syllabus</a></li>
+        <li class="nav-item"><a href="./about.html" class="nav-item nav-link">Contact Us</a></li>
+        <li class="nav-item"><a href="./login.html" class="nav-item nav-link">Login</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!--nav end-->
+  
+
+
+  <!-- main start -->
+  <form class="form-style-9">
+    <ul>
+    <li>
+        <input type="text" name="field1" class="field-style field-split align-left" placeholder="Name" />
+        <input type="email" name="field2" class="field-style field-split align-right" placeholder="Email" />
+    
+    </li>
+    <li>
+        <input type="text" name="field3" class="field-style field-split align-left" placeholder="Phone" />
+        <input type="url" name="field4" class="field-style field-split align-right" placeholder="Website" />
+    </li>
+    <li>
+    <input type="text" name="field3" class="field-style field-full align-none" placeholder="Subject" />
+    </li>
+    <li>
+    <textarea name="field5" class="field-style" placeholder="Reason for learning Hindi"></textarea>
+    </li>
+    <li>
+    <input type="submit" value="Send Message" />
+    </li>
+    </ul>
+    </form>
+
+
+    <!-- Footer -->
+<footer>
+	<!-- Footer main -->
+	<section class="ft-main">
+	  <div class="ft-main-item">
+		<h2 class="ft-title">About</h2>
+		<ul>
+		  <li><a href="#">Services</a></li>
+		  <li><a href="#">Portfolio</a></li>
+		  <li><a href="#">Pricing</a></li>
+		  <li><a href="#">Customers</a></li>
+		  <li><a href="#">Careers</a></li>
+		</ul>
+	  </div>
+	  <div class="ft-main-item">
+		<h2 class="ft-title">Resources</h2>
+		<ul>
+		  <li><a href="#">Docs</a></li>
+		  <li><a href="#">Blog</a></li>
+		  <li><a href="#">eBooks</a></li>
+		  <li><a href="#">Webinars</a></li>
+		</ul>
+	  </div>
+	  <div class="ft-main-item">
+		<h2 class="ft-title">Contact</h2>
+		<ul>
+		  <li><a href="#">Help</a></li>
+		  <li><a href="#">Sales</a></li>
+		  <li><a href="#">Advertise</a></li>
+		</ul>
+	  </div>
+	  <div class="ft-main-item">
+		<h2 class="ft-title">Stay Updated</h2>
+		<p>Subscribe to our newsletter to get our latest news.</p>
+		<form>
+		  <input type="email" name="email" placeholder="Enter email address">
+		  <input type="submit" value="Subscribe">
+		</form>
+	  </div>
+	</section>
+   
+	<!-- Footer social -->
+	<section class="ft-social">
+	  <ul class="ft-social-list">
+		<li><a href="#"><i class="fab fa-facebook"></i></a></li>
+		<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+		<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+		<li><a href="#"><i class="fab fa-github"></i></a></li>
+		<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+		<li><a href="#"><i class="fab fa-youtube"></i></a></li>
+	  </ul>
+	</section>
+   
+	<!-- Footer legal -->
+	<section class="ft-legal">
+	  <ul class="ft-legal-list">
+		<li><a href="#">Terms &amp; Conditions</a></li>
+		<li><a href="#">Privacy Policy</a></li>
+		<li>&copy; 2019 Copyright Nowrap Inc.</li>
+	  </ul>
+	</section>
+  </footer>
+<!-- Footer -->
+</body>
+</html>
+
+<!-- Footer -->

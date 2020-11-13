@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Bootstrap 4 Navbar Fixed to Top</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="index.js"></script>
+  <style>
+    body {
+  background:url('http://cdn.wallpapersafari.com/13/6/Mpsg2b.jpg');
+  margin:0px;
+  font-family: 'Ubuntu', sans-serif;
+	background-size: 100% 110%;
+}
+h1, h2, h3, h4, h5, h6, a {
+  margin:0; padding:0;
+}
+.login {
+  margin:0 auto;
+  max-width:500px;
+}
+.login-header {
+  color:#fff;
+  text-align:center;
+  font-size:300%;
+}
+/* .login-header h1 {
+   text-shadow: 0px 5px 15px #000; */
+}
+.login-form {
+  border:.5px solid #fff;
+  background:#4facff;
+  border-radius:10px;
+  box-shadow:0px 0px 10px #000;
+}
+.login-form h3 {
+  text-align:left;
+  margin-left:40px;
+  color:#fff;
+}
+.login-form {
+  box-sizing:border-box;
+  padding-top:15px;
+	padding-bottom:10%;
+  margin:5% auto;
+  text-align:center;
+}
+.login input[type="text"],
+.login input[type="password"] {
+  max-width:400px;
+	width: 80%;
+  line-height:3em;
+  font-family: 'Ubuntu', sans-serif;
+  margin:1em 2em;
+  border-radius:5px;
+  border:2px solid #f2f2f2;
+  outline:none;
+  padding-left:10px;
+}
+.login-form input[type="button"] {
+  height:30px;
+  width:100px;
+  background:#fff;
+  border:1px solid #f2f2f2;
+  border-radius:20px;
+  color: slategrey;
+  text-transform:uppercase;
+  font-family: 'Ubuntu', sans-serif;
+  cursor:pointer;
+}
+.sign-up{
+  color:#f2f2f2;
+  margin-left:-70%;
+  cursor:pointer;
+  text-decoration:underline;
+}
+.no-access {
+  color:#E86850;
+  margin:20px 0px 20px -57%;
+  text-decoration:underline;
+  cursor:pointer;
+}
+.try-again {
+  color:#f2f2f2;
+  text-decoration:underline;
+  cursor:pointer;
+}
+
+/*Media Querie*/
+@media only screen and (min-width : 150px) and (max-width : 530px){
+  .login-form h3 {
+    text-align:center;
+    margin:0;
+  }
+  .sign-up, .no-access {
+    margin:10px 0;
+  }
+  .login-button {
+    margin-bottom:10px;
+  }
+}
+    * {
+      box-sizing: border-box;
+      font-family: ’Lato’, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    footer {
+      background-color: #555;
+      color: #bbb;
+      line-height: 1.5;
+    }
+
+    footer a {
+      text-decoration: none;
+      color: #eee;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .ft-title {
+      color: #fff;
+      font-family: ’Merriweather’, serif;
+      font-size: 1.375rem;
+      padding-bottom: 0.625rem;
+    }
+
+    body {
+      display: flex;
+      min-height: 100vh;
+      flex-direction: column;
+    }
+
+    .container {
+      flex: 1;
+      /* same as flex-grow: 1; */
+    }
+
+    .ft-main {
+      padding: 1.25rem 1.875rem;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .ft-main-item {
+      padding: 1.25rem;
+      min-width: 12.5rem
+        /*200px*/
+      ;
+    }
+
+    @media only screen and (min-width: 29.8125rem
+
+      /*477px*/
+    ) {
+      .ft-main {
+        justify-content: space-around;
+      }
+    }
+
+    @media only screen and (min-width: 77.5rem
+
+      /*1040px*/
+    ) {
+      .ft-main {
+        justify-content: space-evenly;
+      }
+    }
+
+    form {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    input[type="email"] {
+      border: 0;
+      padding: 0.625rem;
+      margin-top: 0.3125rem;
+    }
+
+    input[type="submit"] {
+      background-color: #00d188;
+      color: #fff;
+      cursor: pointer;
+      border: 0;
+      padding: 0.625rem 0.9375rem;
+      margin-top: 0.3125rem;
+    }
+
+    .ft-social {
+      padding: 0 1.875rem 1.25rem;
+    }
+
+    .ft-social-list {
+      display: flex;
+      justify-content: center;
+      border-top: 1px #777 solid;
+      padding-top: 1.25rem;
+    }
+
+    .ft-social-list li {
+      margin: 0.5rem;
+      font-size: 1.25rem;
+    }
+
+    .ft-legal {
+      padding: 0.9375rem 1.875rem;
+      background-color: #333;
+    }
+
+    .ft-legal-list {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .ft-legal-list li {
+      margin: 0.125rem 0.625rem;
+      white-space: nowrap;
+    }
+
+    /* one before the last child */
+    .ft-legal-list li:nth-last-child(2) {
+      flex: 1;
+      /* same as flex-grow: 1; */
+    }
+  </style>
+</head>
+
+<body>
+  <!--nav start-->
+  <nav class="navbar navbar-expand-lg navbar-fixed-top bg-dark navbar-dark">
+    <a class="navbar-brand" href="/">
+      <img class="site-logo" src="./image/logo-new.png" style='max-width:100px'>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+      aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"><a href="./" class="nav-item nav-link active">Home</a></li>
+        <li class="nav-item"><a href="./classes.html" class="nav-item nav-link">Classes</a></li>
+        <li class="nav-item"><a href="./syllabus.html" class="nav-item nav-link">Syllabus</a></li>
+        <li class="nav-item"><a href="./about.html" class="nav-item nav-link">Contact Us</a></li>
+        <li class="nav-item"><a href="./login.html" class="nav-item nav-link">Login</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!--nav end-->
+  <!-- main start -->
+  <link href='https://fonts.googleapis.com/css?family=Ubuntu:500' rel='stylesheet' type='text/css'>
+
+<div class="login">
+  <div class="login-header">
+    <h1>Login</h1>
+  </div>
+  <div class="login-form">
+    <h3>Username:</h3>
+    <input type="text" placeholder="Username"/><br>
+    <h3>Password:</h3>
+    <input type="password" placeholder="Password"/>
+    <br>
+    <input type="button" value="Login" class="login-button"/>
+    <br>
+    <a class="sign-up">Sign Up!</a>
+    <br>
+    <h6 class="no-access">Can't access your account?</h6>
+  </div>
+</div>
+<div class="error-page">
+  <div class="try-again">Error: Try again?</div>
+</div>
+
+
+  <!-- footer -->
+  <!-- Footer -->
+  <footer>
+    <!-- Footer main -->
+    <section class="ft-main">
+      <div class="ft-main-item">
+        <h2 class="ft-title">About</h2>
+        <ul>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Customers</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+      <div class="ft-main-item">
+        <h2 class="ft-title">Resources</h2>
+        <ul>
+          <li><a href="#">Docs</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">eBooks</a></li>
+          <li><a href="#">Webinars</a></li>
+        </ul>
+      </div>
+      <div class="ft-main-item">
+        <h2 class="ft-title">Contact</h2>
+        <ul>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">Sales</a></li>
+          <li><a href="#">Advertise</a></li>
+        </ul>
+      </div>
+      <div class="ft-main-item">
+        <h2 class="ft-title">Stay Updated</h2>
+        <p>Subscribe to our newsletter to get our latest news.</p>
+        <form>
+          <input type="email" name="email" placeholder="Enter email address">
+          <input type="submit" value="Subscribe">
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer social -->
+    <section class="ft-social">
+      <ul class="ft-social-list">
+        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fab fa-github"></i></a></li>
+        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+      </ul>
+    </section>
+
+    <!-- Footer legal -->
+    <section class="ft-legal">
+      <ul class="ft-legal-list">
+        <li><a href="#">Terms &amp; Conditions</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li>&copy; 2019 Copyright Nowrap Inc.</li>
+      </ul>
+    </section>
+  </footer>
+  <!-- Footer -->
+</body>
+
+</html>
