@@ -44,15 +44,16 @@ h1 {
 }
 .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
     color: #fff;
-    background-color: #077994;
+	background-color: #077994;
+	margin-left: 1px;
 }
 .nav-pills > li > a {
-    border-radius: 4px;
+    border-radius: 1px;
 }
 .nav > li > a {
     position: relative;
     display: block;
-    padding: 10px 15px;
+    padding: 5px 5px;
 }
 p {
     color: #727176;
@@ -82,10 +83,12 @@ h2 {
     color: #d31145;
     font-family: "Oswald", sans-serif;
     font-size: 2em;
-    padding: 0px 15px;
+    padding: 15px 15px;
 }
 .col-md-9 h3 {
-    background-color: #f2f2f2;
+	background-color: #f2f2f2;
+	margin-bottom: 20px;
+	margin-top: 20px;
 }
 
 html, body {
@@ -292,44 +295,73 @@ input[type="submit"] {
 
 
 
+
+
+
+
+
+.bs-example{
+	background-color: #ffcfdf;
+background-image: linear-gradient(215deg, #ffcfdf 25%, #b0f3f1 34%);
+}
+
+
+
+
+.active, .btn:hover {
+  background-color:  #077994df;
+  color: black;
   </style>
 </head>
 
 <body>
-  <!--nav start-->
-  <nav class="navbar navbar-expand-lg navbar-fixed-top bg-dark navbar-dark">
-    <a class="navbar-brand" href="/">
-      <img class="site-logo" src="./image/logo-new.png" style='max-width:100px'>
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item"><a href="./" class="nav-item nav-link active">Home</a></li>
-        <li class="nav-item"><a href="./classes.html" class="nav-item nav-link">Classes</a></li>
-        <li class="nav-item"><a href="./syllabus.html" class="nav-item nav-link">Syllabus</a></li>
-        <li class="nav-item"><a href="./about.html" class="nav-item nav-link">Contact Us</a></li>
-        <li class="nav-item"><a href="./login.html" class="nav-item nav-link">Login</a></li>
-      </ul>
-    </div>
-  </nav>
-  <!--nav end-->
+  <div class="bs-example">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav">
+          <img class="site-logo" src="./image/logo-new.png" style='max-width:100px'>
+          <a href="./" class="nav-item nav-link active">Home</a>
+          <a href="./classes.html" class="nav-item nav-link">Classes</a>
+          <a href="./syllabus.html" class="nav-item nav-link">Syllabus</a>
+          <a href="./about.html" class="nav-item nav-link">Contact Us</a>
+          <a href="./login.html" class="nav-item nav-link">Login</a>
+
+        </div>
+
+      </div>
+    </nav>
     <!-- main start -->
     <h1 class="page-header"><span></span>Hindi course outline</h1>
     <div class="col-md-9">
       <p>The Cactus Course Outlines provide a learning framework for the Cactus Foreign Language Evening Courses. They are designed to provide you with a good idea of what you might cover over a 10-week period, and include typical themes, grammar and vocabulary fields. They are flexible rather than prescriptive, in that our teachers may decide to adapt their learning plans to the specific level, aims and interests of their classes. Use the tabs below to view the relevant Hindi course outline for your level.</p>
-<ul class="nav nav-pills">
-<li class="active"><a href="#beginner-1" data-toggle="pill">Beginner 1</a></li>
-<li class=""><a href="#beginner-2" data-toggle="pill">Beginner 2</a></li>
-<li><a href="#beginner-3" data-toggle="pill">Beginner 3</a></li>
-<li class=""><a href="#elementary-1" data-toggle="pill">Elementary 1</a></li>
-<li><a href="#elementary-2" data-toggle="pill">Elementary 2</a></li>
-<li><a href="#elementary-3" data-toggle="pill">Elementary 3</a></li>
-<li><a href="#intermediate-1" data-toggle="pill">Intermediate 1</a></li>
-<li><a href="#intermediate-2" data-toggle="pill">Intermediate 2</a></li>
-<li class=""><a href="#intermediate-3" data-toggle="pill">Intermediate 3</a></li>
+<ul class="nav nav-pills myDIV">
+<li class="btn" ><a href="#beginner-1" data-toggle="pill">Beginner 1</a></li>
+<li class="btn"><a href="#beginner-2" data-toggle="pill">Beginner 2</a></li>
+<li class="btn"><a href="#beginner-3" data-toggle="pill">Beginner 3</a></li>
+<li class="btn"><a href="#elementary-1" data-toggle="pill">Elementary 1</a></li>
+<li class="btn"><a href="#elementary-2" data-toggle="pill">Elementary 2</a></li>
+<li class="btn"><a href="#elementary-3" data-toggle="pill">Elementary 3</a></li>
+<li class="btn"><a href="#intermediate-1" data-toggle="pill">Intermediate 1</a></li>
+<li class="btn"><a href="#intermediate-2" data-toggle="pill">Intermediate 2</a></li>
+<li class="btn"><a href="#intermediate-3" data-toggle="pill">Intermediate 3</a></li>
 </ul>
+<script>
+	// Add active class to the current button (highlight it)
+	var header = document.getElementById("myDIV");
+	var btns = header.getElementsByClassName("btn");
+	for (var i = 0; i < btns.length; i++) {
+	  btns[i].addEventListener("click", function() {
+	  var current = document.getElementsByClassName("active");
+	  current[0].className = current[0].className.replace(" active", "");
+	  this.className += " active";
+	  });
+	}
+	</script>
 <div class="tab-content">
 <div id="beginner-1" class="tab-pane fade active in">
 <h2>Hindi Beginner 1</h2>
