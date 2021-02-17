@@ -2,772 +2,906 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Bootstrap 4 Navbar Fixed to Top</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-  
-  <style>
-    
-    @import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Bootstrap 4 Navbar Fixed to Top</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
-* {
-  padding: 0;
-  margin: 0;
-}
+	<style>
+		@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
 
-
-
-.page-header {
-    border-bottom: 1px solid #d31145;
-    
-}
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-    font-family: inherit;
-    font-weight: 500;
-    line-height: 1.1;
-    
-}
-
-h1 {
-    color: #d31145;
-    font-size: 3em!important;
-    font-family: "Oswald",sans-serif;
-    font-weight: 300;
-    text-transform: uppercase;
-    margin-top: 90px;
-    text-align: center;
-}
-.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
-    color: #fff;
-	background-color: #077994;
-	margin-left: 1px;
-}
-.nav-pills > li > a {
-    border-radius: 1px;
-}
-.nav > li > a {
-    position: relative;
-    display: block;
-    padding: 5px 5px;
-}
-p {
-    color: #727176;
-    font-size: 1.2em;
-    margin-bottom: 15px;
-    padding: 0 15px;
-    clear: both;
-}
-p {
-    text-align: left;
-}
-p {
-    margin: 0 0 10px;
-}
-p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    
-    margin-top: 2rem;
-    margin-bottom: 5rem;
-
-}
-h2 {
-    color: #d31145;
-    font-family: "Oswald", sans-serif;
-    font-size: 2em;
-    padding: 15px 15px;
-}
-.col-md-9 h3 {
-	background-color: #f2f2f2;
-	margin-bottom: 20px;
-	margin-top: 20px;
-}
-
-html, body {
-    height: 100%;
-    font-family: 'Open Sans'!important;
-    font-weight: 100;
-    color: #727176;
-}
-body {
-    margin: 50px 0 0 0;
-    font-size: 14px;
-    line-height: 1.42857143;
-}
-dl, ol, ul {
-    margin-top: 0;
-    margin-bottom: 1rem;
-    margin-left: 24px;
-}
+		* {
+			padding: 0;
+			margin: 0;
+		}
+		a{
+			color: black;
+		}
 
 
+		.page-header {
+			border-bottom: 1px solid #d31145;
+
+		}
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6,
+		.h1,
+		.h2,
+		.h3,
+		.h4,
+		.h5,
+		.h6 {
+			font-family: inherit;
+			font-weight: 500;
+			line-height: 1.1;
+
+		}
+
+		h1 {
+			color: black;
+			font-size: 3em !important;
+			font-family: "Oswald", sans-serif;
+			font-weight: 300;
+			text-transform: uppercase;
+			margin-top: 90px;
+			text-align: center;
+		}
+
+		.nav-pills>li.active>a,
+		.nav-pills>li.active>a:hover,
+		.nav-pills>li.active>a:focus {
+			color: #fff;
+			background-color: black;
+			margin-left: 1px;
+		}
+
+		.nav-pills>li>a {
+			border-radius: 1px;
+		}
+
+		.nav>li>a {
+			position: relative;
+			display: block;
+			padding: 5px 5px;
+		}
+
+		p {
+			color: black;
+			font-size: 1.2em;
+			margin-bottom: 15px;
+			padding: 0 15px;
+			clear: both;
+		}
+
+		p {
+			text-align: left;
+		}
+
+		p {
+			margin: 0 0 10px;
+		}
+
+		p {
+			display: block;
+			margin-block-start: 1em;
+			margin-block-end: 1em;
+			margin-inline-start: 0px;
+			margin-inline-end: 0px;
+
+			margin-top: 2rem;
+			margin-bottom: 5rem;
+
+		}
+
+		h2 {
+			color: black;
+			font-family: "Oswald", sans-serif;
+			font-size: 2em;
+			padding: 15px 15px;
+		}
+
+		.col-md-9 h3 {
+			background-color: #f2f2f2;
+			margin-bottom: 20px;
+			margin-top: 20px;
+		}
+
+		html,
+		body {
+			height: 100%;
+			font-family: 'Open Sans' !important;
+			font-weight: 100;
+			color: #727176;
+		}
+
+		body {
+			margin:  0 0 0 0;
+			font-size: 14px;
+			line-height: 1.42857143;
+		}
+
+		dl,
+		ol,
+		ul {
+			margin-top: 0;
+			margin-bottom: 1rem;
+			margin-left: 24px;
+		}
 
 
 
 
-@import url('https://codepen.io/profound7/pen/NvdGyj.css?3&common');
 
-body[translate] .grid,
-.grid {
-    position: relative;
-    display: grid;
-    height: 100%;
-    grid-gap: 20px;
-    
-    grid-template:
-        "header header header" 3em
-        "nav    main   aside"  auto
-        "footer footer footer" 3em
-    /    1fr    2fr    1fr;
-    
-    justify-content: center;
-}
 
-.header { grid-area: header; }
-.nav { grid-area: nav; }
-.main { grid-area: main; }
-.aside { grid-area: aside; }
-.footer { grid-area: footer; }
+		@import url('https://codepen.io/profound7/pen/NvdGyj.css?3&common');
 
-.fixed-top {
-    display: block;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    min-height: 3em;
-}
+		body[translate] .grid,
+		.grid {
+			position: relative;
+			display: grid;
+			height: 100%;
+			grid-gap: 20px;
 
-.fixed-bottom {
-    display: block;
-    position: sticky;
-    bottom: 0;
-}
+			grid-template:
+				"header header header"3em "nav    main   aside"auto "footer footer footer"3em / 1fr 2fr 1fr;
 
-/*----------------------------------------
+			justify-content: center;
+		}
+
+		.header {
+			grid-area: header;
+		}
+
+		.nav {
+			grid-area: nav;
+		}
+
+		.main {
+			grid-area: main;
+		}
+
+		.aside {
+			grid-area: aside;
+		}
+
+		.footer {
+			grid-area: footer;
+		}
+
+		.fixed-top {
+			display: block;
+			position: fixed;
+			top: 0;
+			width: 100%;
+			min-height: 3em;
+		}
+
+		.fixed-bottom {
+			display: block;
+			position: sticky;
+			bottom: 0;
+		}
+
+		/*----------------------------------------
     tablet
 ----------------------------------------*/
-@media only screen
-and (min-width: 481px)
-and (max-width: 768px) {
-    .grid {
-        grid-template:
-            "header header" 3em
-            "nav    nav"    3em
-            "main   aside"  auto
-            "footer footer" 3em
-        /    7fr    5fr;
-    }
-}
+		@media only screen and (min-width: 481px) and (max-width: 768px) {
+			.grid {
+				grid-template:
+					"header header"3em "nav    nav"3em "main   aside"auto "footer footer"3em / 7fr 5fr;
+			}
+		}
 
-/*----------------------------------------
+		/*----------------------------------------
     mobile
 ----------------------------------------*/
-@media only screen
-and (max-width: 480px) {
-    .grid {
-        grid-template:
-            "header" 3em
-            "nav   " 3em
-            "main  " auto
-            "aside " auto
-            "footer" 3em
-        /    1fr;
+		@media only screen and (max-width: 480px) {
+			.grid {
+				grid-template:
+					"header"3em "nav   "3em "main  "auto "aside "auto "footer"3em / 1fr;
+			}
+		}
+
+
+
+
+
+
+		* {
+      box-sizing: border-box;
+      font-family: ’Lato’, sans-serif;
+      margin: 0;
+      padding: 0;
     }
-}
 
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
 
+    footer {
+      background-color: #555;
+      color: #bbb;
+      line-height: 1.5;
+    }
 
+    footer a {
+      text-decoration: none;
+      color: #eee;
+    }
 
+    a:hover {
+      text-decoration: underline;
+    }
 
+    .ft-title {
+      color: #fff;
+      font-family: ’Merriweather’, serif;
+      font-size: 1.375rem;
+      padding-bottom: 0.625rem;
+    }
 
-* {
-    box-sizing: border-box;
-    font-family: ’Lato’, sans-serif;
-    margin: 0; 
-    padding: 0;
-}
-ul {
-    list-style: none;
-    padding-left: 0;
-}
-footer {
-    background-color: #555;
-    color: #bbb;
-    line-height: 1.5;
-}
-footer a {
-    text-decoration: none;
-    color: #eee;
-}
-a:hover {
-    text-decoration: underline;
-}
-.ft-title {
-    color: #fff;
-    font-family: ’Merriweather’, serif;
-    font-size: 1.375rem;
-    padding-bottom: 0.625rem;
-}
-body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-}
-.container {
-    flex: 1;    /* same as flex-grow: 1; */
-}
-.ft-main {
-    padding: 1.25rem 1.875rem;
-    display: flex;
-    flex-wrap: wrap;
-}
-.ft-main-item {
-    padding: 1.25rem;
-    min-width: 12.5rem /*200px*/;
-}
-@media only screen and (min-width: 29.8125rem /*477px*/) {
+    body {
+      display: flex;
+      min-height: 100vh;
+      flex-direction: column;
+    }
+
+    .container {
+      flex: 1;
+      /* same as flex-grow: 1; */
+    }
+
     .ft-main {
+      padding: 1.25rem 1.875rem;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .ft-main-item {
+      padding: 1.25rem;
+      min-width: 12.5rem
+        /*200px*/
+      ;
+    }
+
+    @media only screen and (min-width: 29.8125rem
+
+      /*477px*/
+    ) {
+      .ft-main {
         justify-content: space-around;
+      }
     }
-}
-@media only screen and (min-width: 77.5rem /*1240px*/ ) {
-    .ft-main {
+
+    @media only screen and (min-width: 77.5rem
+
+      /*1240px*/
+    ) {
+      .ft-main {
         justify-content: space-evenly;
+      }
     }
-}
-form {
-    display: flex;
-    flex-wrap: wrap;
-}
-input[type="email"] {
-    border: 0;
-    padding: 0.625rem;
-    margin-top: 0.3125rem;
-}
-input[type="submit"] {
-    background-color: #00d188;
-    color: #fff;
-    cursor: pointer;
-    border: 0;
-    padding: 0.625rem 0.9375rem;
-    margin-top: 0.3125rem;
-}
-.ft-social {
-    padding: 0 1.875rem 1.25rem;
-}
-.ft-social-list {
-    display: flex;
-    justify-content: center;
-    border-top: 1px #777 solid; 
-    padding-top: 1.25rem;
-}
-.ft-social-list li {
-    margin: 0.5rem;
-    font-size: 1.25rem;
-}
-.ft-legal {
-    padding: 0.9375rem 1.875rem;
-    background-color: #333;
-}
-.ft-legal-list {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-}
-.ft-legal-list li {
-    margin: 0.125rem 0.625rem;
-    white-space: nowrap;
-}
-/* one before the last child */
-.ft-legal-list li:nth-last-child(2) {
-    flex: 1;       /* same as flex-grow: 1; */
-}
+
+    form {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    input[type="email"] {
+      border: 0;
+      padding: 0.625rem;
+      margin-top: 0.3125rem;
+    }
+
+    input[type="submit"] {
+      background-color: #00d188;
+      color: #fff;
+      cursor: pointer;
+      border: 0;
+      padding: 0.625rem 0.9375rem;
+      margin-top: 0.3125rem;
+    }
+
+    .ft-social {
+      padding: 0 1.875rem 1.25rem;
+    }
+
+    .ft-social-list {
+      display: flex;
+      justify-content: center;
+
+    }
+
+    .ft-social-list li {
+
+      font-size: 1.25rem;
+    }
+
+    .ft-legal {
+
+      background-color: #333;
+    }
+
+    .ft-legal-list {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .ft-legal-list li {
+
+      white-space: nowrap;
+    }
+
+    /* one before the last child */
+    .ft-legal-list li:nth-last-child(2) {
+      flex: 1;
+      /* same as flex-grow: 1; */
+    }
 
 
 
 
 
 
+    #lab_social_icon_footer a {
+      color: #333;
+    }
 
+    #lab_social_icon_footer .social:hover {
+      -webkit-transform: scale(1.1);
+      -moz-transform: scale(1.1);
+      -o-transform: scale(1.1);
+    }
 
+    #lab_social_icon_footer .social {
+      -webkit-transform: scale(0.8);
+      /* Browser Variations: */
 
+      -moz-transform: scale(0.8);
+      -o-transform: scale(0.8);
+      -webkit-transition-duration: 0.5s;
+      -moz-transition-duration: 0.5s;
+      -o-transition-duration: 0.5s;
+    }
 
-.gradient{
-	background-color: #ffcfdf;
-background-image: linear-gradient(215deg, #ffcfdf 25%, #b0f3f1 34%);
-}
+    /*
+    Multicoloured Hover Variations
+*/
 
+    #lab_social_icon_footer #social-fb:hover {
+      color: #abe411;
+    }
 
+    #lab_social_icon_footer #social-tw:hover {
+      color: #a5138d;
+    }
 
+    #lab_social_icon_footer #social-gp:hover {
+      color: #d34836;
+    }
 
-.active, .btn:hover {
-  background-color:  #077994df;
-  color: black;
-  </style>
+    #lab_social_icon_footer #social-em:hover {
+      color: #f39c12;
+    }
+
+    #lab_social_icon_footer .social:hover {
+      -webkit-transform: scale(1);
+      -moz-transform: scale(1);
+      -o-transform: scale(1);
+    }
+
+    #lab_social_icon_footer .social {
+      -webkit-transform: scale(0.8);
+      /* Browser Variations: */
+
+      -moz-transform: scale(0.8);
+      -o-transform: scale(0.8);
+      -webkit-transition-duration: 0.5s;
+      -moz-transition-duration: 0.5s;
+      -o-transition-duration: 0.5s;
+    }
+
+    /*
+    Multicoloured Hover Variations
+*/
+
+    #lab_social_icon_footer #social-fb:hover {
+      color: #3B5998;
+    }
+
+    #lab_social_icon_footer #social-tw:hover {
+      color: #4099FF;
+    }
+
+    #lab_social_icon_footer #social-gp:hover {
+      color: #d34836;
+    }
+
+    #lab_social_icon_footer #social-em:hover {
+      color: #f39c12;
+    }
+		.myDiv .active,
+		.btn:hover {
+			background-color: #777;
+			color: black;
+		}
+	</style>
 </head>
 
 <body>
 	<div class="gradient">
 		<!--nav start-->
-  <nav class="navbar navbar-expand-lg navbar-fixed-top bg-dark navbar-dark">
-    <a class="navbar-brand" href="/">
-      <img class="site-logo" src="./image/logo-new.png" style='max-width:100px'>
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item"><a href="./" class="nav-item nav-link active">Home</a></li>
-        <li class="nav-item"><a href="./classes.html" class="nav-item nav-link">Classes</a></li>
-        <li class="nav-item"><a href="./syllabus.html" class="nav-item nav-link">Syllabus</a></li>
-        <li class="nav-item"><a href="./about.html" class="nav-item nav-link">Contact Us</a></li>
-        <li class="nav-item"><a href="./login.html" class="nav-item nav-link">Login</a></li>
-      </ul>
-    </div>
-  </nav>
-  <!--nav end-->
-	<!-- main start -->
-	
-    <h1 class="page-header"><span></span>Hindi course outline</h1>
-    <div class="col-md-9">
-      <p>The Cactus Course Outlines provide a learning framework for the Cactus Foreign Language Evening Courses. They are designed to provide you with a good idea of what you might cover over a 10-week period, and include typical themes, grammar and vocabulary fields. They are flexible rather than prescriptive, in that our teachers may decide to adapt their learning plans to the specific level, aims and interests of their classes. Use the tabs below to view the relevant Hindi course outline for your level.</p>
-<ul class="nav nav-pills myDIV">
-<li class="btn" ><a href="#beginner-1" data-toggle="pill">Beginner 1</a></li>
-<li class="btn"><a href="#beginner-2" data-toggle="pill">Beginner 2</a></li>
-<li class="btn"><a href="#beginner-3" data-toggle="pill">Beginner 3</a></li>
-<li class="btn"><a href="#elementary-1" data-toggle="pill">Elementary 1</a></li>
-<li class="btn"><a href="#elementary-2" data-toggle="pill">Elementary 2</a></li>
-<li class="btn"><a href="#elementary-3" data-toggle="pill">Elementary 3</a></li>
-<li class="btn"><a href="#intermediate-1" data-toggle="pill">Intermediate 1</a></li>
-<li class="btn"><a href="#intermediate-2" data-toggle="pill">Intermediate 2</a></li>
-<li class="btn"><a href="#intermediate-3" data-toggle="pill">Intermediate 3</a></li>
-</ul>
-<script>
-	// Add active class to the current button (highlight it)
-	var header = document.getElementById("myDIV");
-	var btns = header.getElementsByClassName("btn");
-	for (var i = 0; i < btns.length; i++) {
-	  btns[i].addEventListener("click", function() {
-	  var current = document.getElementsByClassName("active");
-	  current[0].className = current[0].className.replace(" active", "");
-	  this.className += " active";
-	  });
-	}
-	</script>
-<div class="tab-content">
-<div id="beginner-1" class="tab-pane fade active in">
-<h2>Hindi Beginner 1</h2>
-<h3>Topics &amp; Vocabulary:</h3>
-<ul class="contentbullets">
-<li>Greetings</li>
-<li>Yes-No questions</li>
-<li>Who and how people are</li>
-<li>What (identity), Nationality, Jobs</li>
-<li>Shopping, how much…, what kind …</li>
-<li>Have, want, like</li>
-<li>Availability (milnā)</li>
-<li>Directions, Where can I get… , Position and Place</li>
-<li>Talking about accommodation</li>
-<li>Exchanging personal details, introductions</li>
-<li>Formal/informal speaking</li>
-<li>Giving orders and making requests</li>
-<li>Possession and the family</li>
-<li>Numbers</li>
-</ul>
-<h3>Grammar:</h3>
-<ul class="contentbullets">
-<li>Making sentences</li>
-<li>Verb to be, possessives</li>
-<li>Yes/no questions,</li>
-<li>Pronouns āp and maĩ</li>
-<li>Question words-kitnā, kaisā</li>
-<li>Introduction to gender and number: nouns and adjectives</li>
-<li>Plurals</li>
-<li>Postpositions, Case; to have</li>
-<li>Verbs: routine events, present and imperatives</li>
-<li>Ko constructions</li>
-<li>Kā/kī/ke Possesives</li>
-<li>Koī/kuch</li>
-</ul>
-<h3>Cultural Content:</h3>
-<ul class="contentbullets">
-<li>Polite vs everyday language – showing respect</li>
-<li>Body language (agreeing, disagreeing, showing doubt)</li>
-<li>English vis-à-vis Hindi</li>
-<li>Showing position in society</li>
-<li>Seasonal festivals/Gods’ days</li>
-</ul>
-<h3>Skills Work:</h3>
-<ul class="contentbullets">
-<li>Conversation development and dialogues</li>
-<li>Reading and writing: the Devanagari alphabet</li>
-</ul>
-</div>
-<div id="beginner-2" class="tab-pane fade">
-<h2>Hindi Beginner 2</h2>
-<h3>Topics &amp; Vocabulary:</h3>
-<ul class="contentbullets">
-<li>Revision of Beginners 1</li>
-<li>Adverbs of time and place</li>
-<li>Talking about the past and the future</li>
-<li>Comparing things and people</li>
-<li>Discussing possibilities and conditions</li>
-</ul>
-<h3>Grammar:</h3>
-<ul class="contentbullets">
-<li>Pronouns, Possessives, Ka/ke/ki possessives</li>
-<li>Reflexive pronoun apnā</li>
-<li>Gender, Number,</li>
-<li>Intranstive and transitive verbs, Absolutive</li>
-<li>Present Tense and Present continuous, Perfective and Imperfective Past, Future</li>
-<li>Imperatives, Subjunctive, Subjunctive/Future Imperatives, You can go, Let me go</li>
-<li>Ko construction, Koi/kuch</li>
-<li>Emphatic constructions</li>
-<li>Comparatives</li>
-</ul>
-<h3>Cultural Content:</h3>
-<ul class="contentbullets">
-<li>Family life – living with people</li>
-<li>Daily life and religion</li>
-<li>Shopping in India</li>
-<li>Seasonal festivals/Gods’ days</li>
-</ul>
-<h3>Skills Work:</h3>
-<ul class="contentbullets">
-<li>Basic conversations and role plays</li>
-</ul>
-</div>
-<div id="beginner-3" class="tab-pane fade">
-<h2>Hindi Beginner 3</h2>
-<h3>Topics &amp; Vocabulary:</h3>
-<ul class="contentbullets">
-<li>Recommendations and advice</li>
-<li>Talking to the Doctor</li>
-<li>Parts of the body and medical vocabulary</li>
-<li>Finding the way</li>
-<li>Talking about necessity and obligation</li>
-<li>Time</li>
-</ul>
-<h3>Grammar:</h3>
-<ul class="contentbullets">
-<li>Revision of Beginners 2 Grammar and Structures</li>
-<li>Lagnā verb</li>
-<li>Obligations and compulsions</li>
-<li>Passives</li>
-<li>Relative/co-relative sentences</li>
-<li>Causatives</li>
-<li>Compound verbs</li>
-<li>Saknā, cuknā, pānā</li>
-</ul>
-<h3>Cultural Content:</h3>
-<ul class="contentbullets">
-<li>Health and illness – Hindu perceptions</li>
-<li>Style in Hindi</li>
-<li>Towns and cities in India – Geography</li>
-<li>Seasonal festivals/Gods’ days</li>
-</ul>
-<h3>Skills Work:</h3>
-<ul class="contentbullets">
-<li>Dialogues, accounts and directions</li>
-<li>Holding conversations</li>
-</ul>
-<div class="backtotop"></div>
-</div>
-<div id="elementary-1" class="tab-pane fade">
-<h2>Hindi Elementary 1</h2>
-<h3>Topics &amp; Vocabulary:</h3>
-<ul class="contentbullets">
-<li>Revision of Beginners 3 Hindi</li>
-<li>Talking about family, hobbies, spare time and work</li>
-<li>Possession</li>
-<li>Describing things and places</li>
-<li>Describing positions</li>
-<li>Numbers</li>
-<li>Talking about work and study</li>
-</ul>
-<h3>Grammar:</h3>
-<ul class="contentbullets">
-<li>Revision of Beginners 3 Grammar and Structures</li>
-<li>Verb tenses and mood</li>
-<li>The infinitive</li>
-</ul>
-<h3>Cultural Content:</h3>
-<ul class="contentbullets">
-<li>Leisure and work</li>
-<li>Education in India</li>
-<li>Castes</li>
-<li>Seasonal festivals/Gods’ days</li>
-</ul>
-<h3>Skills Work:</h3>
-<ul class="contentbullets">
-<li>Dialogues</li>
-<li>Holding conversations</li>
-</ul>
-<div class="backtotop"></div>
-</div>
-<div id="elementary-2" class="tab-pane fade">
-<h2>Hindi Elementary 2</h2>
-<h3>Topics &amp; Vocabulary:</h3>
-<ul class="contentbullets">
-<li>Revision of Elementary 1</li>
-<li>Talking about the past and the future</li>
-<li>Using the Phone</li>
-<li>Days and dates, Times</li>
-<li>Making arrangements</li>
-<li>Dining in and out</li>
-</ul>
-<h3>Grammar:</h3>
-<ul class="contentbullets">
-<li>The Conditional</li>
-<li>Have</li>
-<li>The future, uses of the future</li>
-<li>Transitive and intransitive</li>
-<li>Aspects</li>
-</ul>
-<h3>Cultural content:</h3>
-<ul class="contentbullets">
-<li>Going out and visiting people</li>
-<li>Solar vs Lunar calendar</li>
-<li>Religion in India</li>
-<li>Invitations</li>
-<li>Seasonal festivals/Gods’ days</li>
-</ul>
-<h3>Skills Work:</h3>
-<ul class="contentbullets">
-<li>Dialogues</li>
-<li>Holding conversations</li>
-</ul>
-<div class="backtotop"></div>
-</div>
-<div id="elementary-3" class="tab-pane fade">
-<h2>Hindi Elementary 3</h2>
-<h3>Topics &amp; Vocabulary:</h3>
-<ul class="contentbullets">
-<li>Revision of Elementary 2</li>
-<li>Talking about the past and the future</li>
-<li>Dining in and out</li>
-<li>Small talk</li>
-<li>Extended conversations</li>
-<li>Give permission</li>
-<li>Discussing possibilities, “If only….”</li>
-<li>Discussing alternatives, although</li>
-<li>Apologising</li>
-</ul>
-<h3>Grammar:</h3>
-<ul class="contentbullets">
-<li>The Infinitive</li>
-<li>Transitivity, the passive and the causative</li>
-<li>Continuation and the habitual</li>
-<li>Compound verbs</li>
-</ul>
-<h3>Cultural Content:</h3>
-<ul class="contentbullets">
-<li>Marriage and love</li>
-<li>Art</li>
-<li>Food in India</li>
-<li>Asking and giving permission, refusing and apologising</li>
-<li>India in history – the Raj, the Moghuls, etc.</li>
-<li>Seasonal festivals/Gods’ days</li>
-</ul>
-<h3>Skills Work:</h3>
-<ul class="contentbullets">
-<li>Dialogues</li>
-<li>Holding conversations</li>
-</ul>
-</div>
-<div id="intermediate-1" class="tab-pane fade">
-<h2>Hindi Intermediate 1</h2>
-<h3>Topics &amp; Vocabulary:</h3>
-<ul class="contentbullets">
-<li>Telephoning</li>
-<li>Giving advice and making suggestions</li>
-<li>Talking about wants and desires</li>
-<li>Commands and ordering</li>
-<li>Describing and giving advice</li>
-<li>Telling the time</li>
-<li>Making preparations</li>
-</ul>
-<h3>Grammar:</h3>
-<ul class="contentbullets">
-<li>The Subjunctive</li>
-<li>The Imperative</li>
-<li>Verb Aspect – perfective and imperfective</li>
-<li>Voice – transitive and intransitive</li>
-<li>Verb chaining and conjunctions</li>
-</ul>
-<h3>Cultural Content:</h3>
-<ul class="contentbullets">
-<li>Ambition and dreams</li>
-<li>Bollywood</li>
-<li>Travelling in India</li>
-<li>Regional Art in India</li>
-<li>Seasonal festivals/Gods’ days</li>
-</ul>
-<h3>Skills Work:</h3>
-<ul class="contentbullets">
-<li>Dialogues</li>
-<li>Conversations</li>
-<li>Role plays</li>
-<li>Telephoning</li>
-</ul>
-</div>
-<div id="intermediate-2" class="tab-pane fade">
-<h2>Hindi Intermediate 2</h2>
-<h3>Topics &amp; Vocabulary:</h3>
-<ul class="contentbullets">
-<li>Giving advice, reasons and conditions</li>
-<li>Relating information</li>
-<li>Talking about people, facts and events</li>
-<li>Processes</li>
-<li>Comparing similarities and differences</li>
-<li>Describing actions and processes in the past, present and future</li>
-<li>Making plans, talking about ambitions</li>
-</ul>
-<h3>Grammar:</h3>
-<ul class="contentbullets">
-<li>Relative clauses</li>
-<li>Obligation and Necessity</li>
-<li>Active and Passive</li>
-<li>Beginning and Permitting</li>
-<li>Habitual</li>
-<li>Reflexives</li>
-<li>Adverbs</li>
-</ul>
-<h3>Cultural Content:</h3>
-<ul class="contentbullets">
-<li>Education and careers</li>
-<li>Castes and Heriditary Careers</li>
-<li>The languages of India</li>
-<li>News reporting in India</li>
-<li>Seasonal festivals/Gods’ days</li>
-</ul>
-<h3>Skills Work:</h3>
-<ul class="contentbullets">
-<li>Dialogues</li>
-<li>Conversations</li>
-<li>Role plays</li>
-<li>Telephoning</li>
-</ul>
-</div>
-<div id="intermediate-3" class="tab-pane fade">
-<h2>Hindi Intermediate 3</h2>
-<h3>Topics &amp; Vocabulary:</h3>
-<ul class="contentbullets">
-<li>Talking about prospects and ambitions</li>
-<li>Weighing up options and giving arguments</li>
-<li>Making plans and negotiating</li>
-<li>Suggesting offering and refusing</li>
-<li>Varying the message by nuance</li>
-<li>Talking about feelings, hopes and desires</li>
-<li>Plans for the future</li>
-</ul>
-<h3>Grammar:</h3>
-<ul class="contentbullets">
-<li>Conjunct and compound verbs</li>
-<li>Reduplication – emphasis and distributives</li>
-<li>Echoing</li>
-<li>Conditional and concessional constructions</li>
-<li>Participles</li>
-<li>Transitive, Intransitive and Causative</li>
-<li>The Future</li>
-</ul>
-<h3>Cultural Content:</h3>
-<ul class="contentbullets">
-<li>Education and careers</li>
-<li>The Hindi diaspora</li>
-<li>Doing business in India</li>
-<li>egotiating</li>
-<li>Seasonal festivals/Gods’ days</li>
-</ul>
-<h3>Skills Work:</h3>
-<ul class="contentbullets">
-<li>Dialogues</li>
-<li>Formal and informal styles</li>
-<li>Role plays</li>
-</ul>
-</div>
-<p style="text-align: center;"><a class="btn btn-default btn-lg" href="./login.html">Book now</a></p>
-</div>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-</div>
-      
+		<nav class="navbar navbar-expand-lg navbar-fixed-top bg-dark navbar-dark">
+			<a class="navbar-brand" href="/">
+				<img class="site-logo" src="./image/logo-new.png" style='max-width:100px'>
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+				aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item"><a href="./" class="nav-item nav-link active">Home</a></li>
+					<li class="nav-item"><a href="./classes.html" class="nav-item nav-link">Classes</a></li>
+					<li class="nav-item"><a href="./syllabus.html" class="nav-item nav-link">Syllabus</a></li>
+					<li class="nav-item"><a href="./about.html" class="nav-item nav-link">Contact Us</a></li>
+					<li class="nav-item"><a href="./login.html" class="nav-item nav-link">Login</a></li>
+				</ul>
+			</div>
+		</nav>
+		<!--nav end-->
+		<!-- main start -->
+
+		<h1 class="page-header"><span></span>Hindi course outline</h1>
+		<div class="col-md-9">
+			<p>The Cactus Course Outlines provide a learning framework for the Cactus Foreign Language Evening Courses.
+				They are designed to provide you with a good idea of what you might cover over a 10-week period, and
+				include typical themes, grammar and vocabulary fields. They are flexible rather than prescriptive, in
+				that our teachers may decide to adapt their learning plans to the specific level, aims and interests of
+				their classes. Use the tabs below to view the relevant Hindi course outline for your level.</p>
+			<ul class="nav nav-pills myDIV">
+				<li class="btn"><a href="#beginner-1" data-toggle="pill">Beginner 1</a></li>
+				<li class="btn"><a href="#beginner-2" data-toggle="pill">Beginner 2</a></li>
+				<li class="btn"><a href="#beginner-3" data-toggle="pill">Beginner 3</a></li>
+				<li class="btn"><a href="#elementary-1" data-toggle="pill">Elementary 1</a></li>
+				<li class="btn"><a href="#elementary-2" data-toggle="pill">Elementary 2</a></li>
+				<li class="btn"><a href="#elementary-3" data-toggle="pill">Elementary 3</a></li>
+				<li class="btn"><a href="#intermediate-1" data-toggle="pill">Intermediate 1</a></li>
+				<li class="btn"><a href="#intermediate-2" data-toggle="pill">Intermediate 2</a></li>
+				<li class="btn"><a href="#intermediate-3" data-toggle="pill">Intermediate 3</a></li>
+			</ul>
+			<script>
+				// Add active class to the current button (highlight it)
+				var header = document.getElementById("myDIV");
+				var btns = header.getElementsByClassName("btn");
+				for (var i = 0; i < btns.length; i++) {
+					btns[i].addEventListener("click", function () {
+						var current = document.getElementsByClassName("active");
+						current[0].className = current[0].className.replace(" active", "");
+						this.className += " active";
+					});
+				}
+			</script>
+			<div class="tab-content">
+				<div id="beginner-1" class="tab-pane fade active in">
+					<h2>Hindi Beginner 1</h2>
+					<h3>Topics &amp; Vocabulary:</h3>
+					<ul class="contentbullets">
+						<li>Greetings</li>
+						<li>Yes-No questions</li>
+						<li>Who and how people are</li>
+						<li>What (identity), Nationality, Jobs</li>
+						<li>Shopping, how much…, what kind …</li>
+						<li>Have, want, like</li>
+						<li>Availability (milnā)</li>
+						<li>Directions, Where can I get… , Position and Place</li>
+						<li>Talking about accommodation</li>
+						<li>Exchanging personal details, introductions</li>
+						<li>Formal/informal speaking</li>
+						<li>Giving orders and making requests</li>
+						<li>Possession and the family</li>
+						<li>Numbers</li>
+					</ul>
+					<h3>Grammar:</h3>
+					<ul class="contentbullets">
+						<li>Making sentences</li>
+						<li>Verb to be, possessives</li>
+						<li>Yes/no questions,</li>
+						<li>Pronouns āp and maĩ</li>
+						<li>Question words-kitnā, kaisā</li>
+						<li>Introduction to gender and number: nouns and adjectives</li>
+						<li>Plurals</li>
+						<li>Postpositions, Case; to have</li>
+						<li>Verbs: routine events, present and imperatives</li>
+						<li>Ko constructions</li>
+						<li>Kā/kī/ke Possesives</li>
+						<li>Koī/kuch</li>
+					</ul>
+					<h3>Cultural Content:</h3>
+					<ul class="contentbullets">
+						<li>Polite vs everyday language – showing respect</li>
+						<li>Body language (agreeing, disagreeing, showing doubt)</li>
+						<li>English vis-à-vis Hindi</li>
+						<li>Showing position in society</li>
+						<li>Seasonal festivals/Gods’ days</li>
+					</ul>
+					<h3>Skills Work:</h3>
+					<ul class="contentbullets">
+						<li>Conversation development and dialogues</li>
+						<li>Reading and writing: the Devanagari alphabet</li>
+					</ul>
+				</div>
+				<div id="beginner-2" class="tab-pane fade">
+					<h2>Hindi Beginner 2</h2>
+					<h3>Topics &amp; Vocabulary:</h3>
+					<ul class="contentbullets">
+						<li>Revision of Beginners 1</li>
+						<li>Adverbs of time and place</li>
+						<li>Talking about the past and the future</li>
+						<li>Comparing things and people</li>
+						<li>Discussing possibilities and conditions</li>
+					</ul>
+					<h3>Grammar:</h3>
+					<ul class="contentbullets">
+						<li>Pronouns, Possessives, Ka/ke/ki possessives</li>
+						<li>Reflexive pronoun apnā</li>
+						<li>Gender, Number,</li>
+						<li>Intranstive and transitive verbs, Absolutive</li>
+						<li>Present Tense and Present continuous, Perfective and Imperfective Past, Future</li>
+						<li>Imperatives, Subjunctive, Subjunctive/Future Imperatives, You can go, Let me go</li>
+						<li>Ko construction, Koi/kuch</li>
+						<li>Emphatic constructions</li>
+						<li>Comparatives</li>
+					</ul>
+					<h3>Cultural Content:</h3>
+					<ul class="contentbullets">
+						<li>Family life – living with people</li>
+						<li>Daily life and religion</li>
+						<li>Shopping in India</li>
+						<li>Seasonal festivals/Gods’ days</li>
+					</ul>
+					<h3>Skills Work:</h3>
+					<ul class="contentbullets">
+						<li>Basic conversations and role plays</li>
+					</ul>
+				</div>
+				<div id="beginner-3" class="tab-pane fade">
+					<h2>Hindi Beginner 3</h2>
+					<h3>Topics &amp; Vocabulary:</h3>
+					<ul class="contentbullets">
+						<li>Recommendations and advice</li>
+						<li>Talking to the Doctor</li>
+						<li>Parts of the body and medical vocabulary</li>
+						<li>Finding the way</li>
+						<li>Talking about necessity and obligation</li>
+						<li>Time</li>
+					</ul>
+					<h3>Grammar:</h3>
+					<ul class="contentbullets">
+						<li>Revision of Beginners 2 Grammar and Structures</li>
+						<li>Lagnā verb</li>
+						<li>Obligations and compulsions</li>
+						<li>Passives</li>
+						<li>Relative/co-relative sentences</li>
+						<li>Causatives</li>
+						<li>Compound verbs</li>
+						<li>Saknā, cuknā, pānā</li>
+					</ul>
+					<h3>Cultural Content:</h3>
+					<ul class="contentbullets">
+						<li>Health and illness – Hindu perceptions</li>
+						<li>Style in Hindi</li>
+						<li>Towns and cities in India – Geography</li>
+						<li>Seasonal festivals/Gods’ days</li>
+					</ul>
+					<h3>Skills Work:</h3>
+					<ul class="contentbullets">
+						<li>Dialogues, accounts and directions</li>
+						<li>Holding conversations</li>
+					</ul>
+					<div class="backtotop"></div>
+				</div>
+				<div id="elementary-1" class="tab-pane fade">
+					<h2>Hindi Elementary 1</h2>
+					<h3>Topics &amp; Vocabulary:</h3>
+					<ul class="contentbullets">
+						<li>Revision of Beginners 3 Hindi</li>
+						<li>Talking about family, hobbies, spare time and work</li>
+						<li>Possession</li>
+						<li>Describing things and places</li>
+						<li>Describing positions</li>
+						<li>Numbers</li>
+						<li>Talking about work and study</li>
+					</ul>
+					<h3>Grammar:</h3>
+					<ul class="contentbullets">
+						<li>Revision of Beginners 3 Grammar and Structures</li>
+						<li>Verb tenses and mood</li>
+						<li>The infinitive</li>
+					</ul>
+					<h3>Cultural Content:</h3>
+					<ul class="contentbullets">
+						<li>Leisure and work</li>
+						<li>Education in India</li>
+						<li>Castes</li>
+						<li>Seasonal festivals/Gods’ days</li>
+					</ul>
+					<h3>Skills Work:</h3>
+					<ul class="contentbullets">
+						<li>Dialogues</li>
+						<li>Holding conversations</li>
+					</ul>
+					<div class="backtotop"></div>
+				</div>
+				<div id="elementary-2" class="tab-pane fade">
+					<h2>Hindi Elementary 2</h2>
+					<h3>Topics &amp; Vocabulary:</h3>
+					<ul class="contentbullets">
+						<li>Revision of Elementary 1</li>
+						<li>Talking about the past and the future</li>
+						<li>Using the Phone</li>
+						<li>Days and dates, Times</li>
+						<li>Making arrangements</li>
+						<li>Dining in and out</li>
+					</ul>
+					<h3>Grammar:</h3>
+					<ul class="contentbullets">
+						<li>The Conditional</li>
+						<li>Have</li>
+						<li>The future, uses of the future</li>
+						<li>Transitive and intransitive</li>
+						<li>Aspects</li>
+					</ul>
+					<h3>Cultural content:</h3>
+					<ul class="contentbullets">
+						<li>Going out and visiting people</li>
+						<li>Solar vs Lunar calendar</li>
+						<li>Religion in India</li>
+						<li>Invitations</li>
+						<li>Seasonal festivals/Gods’ days</li>
+					</ul>
+					<h3>Skills Work:</h3>
+					<ul class="contentbullets">
+						<li>Dialogues</li>
+						<li>Holding conversations</li>
+					</ul>
+					<div class="backtotop"></div>
+				</div>
+				<div id="elementary-3" class="tab-pane fade">
+					<h2>Hindi Elementary 3</h2>
+					<h3>Topics &amp; Vocabulary:</h3>
+					<ul class="contentbullets">
+						<li>Revision of Elementary 2</li>
+						<li>Talking about the past and the future</li>
+						<li>Dining in and out</li>
+						<li>Small talk</li>
+						<li>Extended conversations</li>
+						<li>Give permission</li>
+						<li>Discussing possibilities, “If only….”</li>
+						<li>Discussing alternatives, although</li>
+						<li>Apologising</li>
+					</ul>
+					<h3>Grammar:</h3>
+					<ul class="contentbullets">
+						<li>The Infinitive</li>
+						<li>Transitivity, the passive and the causative</li>
+						<li>Continuation and the habitual</li>
+						<li>Compound verbs</li>
+					</ul>
+					<h3>Cultural Content:</h3>
+					<ul class="contentbullets">
+						<li>Marriage and love</li>
+						<li>Art</li>
+						<li>Food in India</li>
+						<li>Asking and giving permission, refusing and apologising</li>
+						<li>India in history – the Raj, the Moghuls, etc.</li>
+						<li>Seasonal festivals/Gods’ days</li>
+					</ul>
+					<h3>Skills Work:</h3>
+					<ul class="contentbullets">
+						<li>Dialogues</li>
+						<li>Holding conversations</li>
+					</ul>
+				</div>
+				<div id="intermediate-1" class="tab-pane fade">
+					<h2>Hindi Intermediate 1</h2>
+					<h3>Topics &amp; Vocabulary:</h3>
+					<ul class="contentbullets">
+						<li>Telephoning</li>
+						<li>Giving advice and making suggestions</li>
+						<li>Talking about wants and desires</li>
+						<li>Commands and ordering</li>
+						<li>Describing and giving advice</li>
+						<li>Telling the time</li>
+						<li>Making preparations</li>
+					</ul>
+					<h3>Grammar:</h3>
+					<ul class="contentbullets">
+						<li>The Subjunctive</li>
+						<li>The Imperative</li>
+						<li>Verb Aspect – perfective and imperfective</li>
+						<li>Voice – transitive and intransitive</li>
+						<li>Verb chaining and conjunctions</li>
+					</ul>
+					<h3>Cultural Content:</h3>
+					<ul class="contentbullets">
+						<li>Ambition and dreams</li>
+						<li>Bollywood</li>
+						<li>Travelling in India</li>
+						<li>Regional Art in India</li>
+						<li>Seasonal festivals/Gods’ days</li>
+					</ul>
+					<h3>Skills Work:</h3>
+					<ul class="contentbullets">
+						<li>Dialogues</li>
+						<li>Conversations</li>
+						<li>Role plays</li>
+						<li>Telephoning</li>
+					</ul>
+				</div>
+				<div id="intermediate-2" class="tab-pane fade">
+					<h2>Hindi Intermediate 2</h2>
+					<h3>Topics &amp; Vocabulary:</h3>
+					<ul class="contentbullets">
+						<li>Giving advice, reasons and conditions</li>
+						<li>Relating information</li>
+						<li>Talking about people, facts and events</li>
+						<li>Processes</li>
+						<li>Comparing similarities and differences</li>
+						<li>Describing actions and processes in the past, present and future</li>
+						<li>Making plans, talking about ambitions</li>
+					</ul>
+					<h3>Grammar:</h3>
+					<ul class="contentbullets">
+						<li>Relative clauses</li>
+						<li>Obligation and Necessity</li>
+						<li>Active and Passive</li>
+						<li>Beginning and Permitting</li>
+						<li>Habitual</li>
+						<li>Reflexives</li>
+						<li>Adverbs</li>
+					</ul>
+					<h3>Cultural Content:</h3>
+					<ul class="contentbullets">
+						<li>Education and careers</li>
+						<li>Castes and Heriditary Careers</li>
+						<li>The languages of India</li>
+						<li>News reporting in India</li>
+						<li>Seasonal festivals/Gods’ days</li>
+					</ul>
+					<h3>Skills Work:</h3>
+					<ul class="contentbullets">
+						<li>Dialogues</li>
+						<li>Conversations</li>
+						<li>Role plays</li>
+						<li>Telephoning</li>
+					</ul>
+				</div>
+				<div id="intermediate-3" class="tab-pane fade">
+					<h2>Hindi Intermediate 3</h2>
+					<h3>Topics &amp; Vocabulary:</h3>
+					<ul class="contentbullets">
+						<li>Talking about prospects and ambitions</li>
+						<li>Weighing up options and giving arguments</li>
+						<li>Making plans and negotiating</li>
+						<li>Suggesting offering and refusing</li>
+						<li>Varying the message by nuance</li>
+						<li>Talking about feelings, hopes and desires</li>
+						<li>Plans for the future</li>
+					</ul>
+					<h3>Grammar:</h3>
+					<ul class="contentbullets">
+						<li>Conjunct and compound verbs</li>
+						<li>Reduplication – emphasis and distributives</li>
+						<li>Echoing</li>
+						<li>Conditional and concessional constructions</li>
+						<li>Participles</li>
+						<li>Transitive, Intransitive and Causative</li>
+						<li>The Future</li>
+					</ul>
+					<h3>Cultural Content:</h3>
+					<ul class="contentbullets">
+						<li>Education and careers</li>
+						<li>The Hindi diaspora</li>
+						<li>Doing business in India</li>
+						<li>egotiating</li>
+						<li>Seasonal festivals/Gods’ days</li>
+					</ul>
+					<h3>Skills Work:</h3>
+					<ul class="contentbullets">
+						<li>Dialogues</li>
+						<li>Formal and informal styles</li>
+						<li>Role plays</li>
+					</ul>
+				</div>
+				<p style="text-align: center;"><a class="btn btn-default btn-lg" href="./login.html">Book now</a></p>
+			</div>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+		</div>
+
 	</div>
-</div>
-<!-- main close -->
+	</div>
+	<!-- main close -->
 
 
-<!-- Footer -->
-<footer>
-	<!-- Footer main -->
-	<section class="ft-main">
-	  <div class="ft-main-item">
-		<h2 class="ft-title">About</h2>
-		<ul>
-		  <li><a href="#">Services</a></li>
-		  <li><a href="#">Portfolio</a></li>
-		  <li><a href="#">Pricing</a></li>
-		  <li><a href="#">Customers</a></li>
-		  <li><a href="#">Careers</a></li>
-		</ul>
+	<!-- Footer -->
+	<footer>
+		<!-- Footer main -->
+		<section class="ft-main">
+			<div class="ft-main-item">
+				<h2 class="ft-title">About</h2>
+				<ul>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Portfolio</a></li>
+					<li><a href="#">Pricing</a></li>
+					<li><a href="#">Customers</a></li>
+					<li><a href="#">Careers</a></li>
+				</ul>
+			</div>
+			<div class="ft-main-item">
+				<h2 class="ft-title">Resources</h2>
+				<ul>
+					<li><a href="#">Docs</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">eBooks</a></li>
+					<li><a href="#">Webinars</a></li>
+				</ul>
+			</div>
+			<div class="ft-main-item">
+				<h2 class="ft-title">Contact</h2>
+				<ul>
+					<li><a href="#">Help</a></li>
+					<li><a href="#">Sales</a></li>
+					<li><a href="#">Advertise</a></li>
+				</ul>
+			</div>
+			<div class="ft-main-item">
+				<h2 class="ft-title">Stay Updated</h2>
+				<p>Subscribe to our newsletter to get our latest news.</p>
+				<form>
+					<input type="email" name="email" placeholder="Enter email address">
+					<input type="submit" value="Subscribe">
+				</form>
+			</div>
+		</section>
+
+		 <!-- Footer social -->
+		 <section class="ft-social">
+			<ul class="ft-social-list">
+			  <section id="lab_social_icon_footer">
+				<!-- Include Font Awesome Stylesheet in Header -->
+				<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+				<div class="container">
+				  <div class="text-center center-block">
+					<a href="https://www.facebook.com/bootsnipp"><i id="social-fb"
+						class="fa fa-facebook-square fa-3x social"></i></a>
+					<a href="https://twitter.com/bootsnipp"><i id="social-tw"
+						class="fa fa-twitter-square fa-3x social"></i></a>
+					<a href="https://plus.google.com/+Bootsnipp-page"><i id="social-gp"
+						class="fa fa-google-plus-square fa-3x social"></i></a>
+					<a href="mailto:#"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+				  </div>
+				</div>
+			  </section>
+			</ul>
+		  </section>
 	  </div>
-	  <div class="ft-main-item">
-		<h2 class="ft-title">Resources</h2>
-		<ul>
-		  <li><a href="#">Docs</a></li>
-		  <li><a href="#">Blog</a></li>
-		  <li><a href="#">eBooks</a></li>
-		  <li><a href="#">Webinars</a></li>
-		</ul>
-	  </div>
-	  <div class="ft-main-item">
-		<h2 class="ft-title">Contact</h2>
-		<ul>
-		  <li><a href="#">Help</a></li>
-		  <li><a href="#">Sales</a></li>
-		  <li><a href="#">Advertise</a></li>
-		</ul>
-	  </div>
-	  <div class="ft-main-item">
-		<h2 class="ft-title">Stay Updated</h2>
-		<p>Subscribe to our newsletter to get our latest news.</p>
-		<form>
-		  <input type="email" name="email" placeholder="Enter email address">
-		  <input type="submit" value="Subscribe">
-		</form>
-	  </div>
-	</section>
-   
-	<!-- Footer social -->
-	<section class="ft-social">
-	  <ul class="ft-social-list">
-		<li><a href="#"><i class="fab fa-facebook"></i></a></li>
-		<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-		<li><a href="#"><i class="fab fa-instagram"></i></a></li>
-		<li><a href="#"><i class="fab fa-github"></i></a></li>
-		<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-		<li><a href="#"><i class="fab fa-youtube"></i></a></li>
-	  </ul>
-	</section>
-   
-	<!-- Footer legal -->
-	<section class="ft-legal">
-	  <ul class="ft-legal-list">
-		<li><a href="#">Terms &amp; Conditions</a></li>
-		<li><a href="#">Privacy Policy</a></li>
-		<li>&copy; 2019 Copyright Nowrap Inc.</li>
-	  </ul>
-	</section>
-  </footer>
-<!-- Footer -->
+	  <!-- Footer legal -->
+	  
+	  </footer>
+	  <!-- Footer -->
 </body>
+
 </html>

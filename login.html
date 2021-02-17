@@ -13,98 +13,121 @@
   <script type="text/javascript" src="index.js"></script>
   <style>
     body {
-  background:url('http://cdn.wallpapersafari.com/13/6/Mpsg2b.jpg');
-  margin:0px;
-  font-family: 'Ubuntu', sans-serif;
-	background-size: 100% 110%;
-}
-h1, h2, h3, h4, h5, h6, a {
-  margin:0; padding:0;
-}
-.login {
-  margin:0 auto;
-  max-width:500px;
-}
-.login-header {
-  color:#fff;
-  text-align:center;
-  font-size:300%;
-}
-/* .login-header h1 {
-   text-shadow: 0px 5px 15px #000; */
-}
-.login-form {
-  border:.5px solid #fff;
-  background:#4facff;
-  border-radius:10px;
-  box-shadow:0px 0px 10px #000;
-}
-.login-form h3 {
-  text-align:left;
-  margin-left:40px;
-  color:#fff;
-}
-.login-form {
-  box-sizing:border-box;
-  padding-top:15px;
-	padding-bottom:10%;
-  margin:5% auto;
-  text-align:center;
-}
-.login input[type="text"],
-.login input[type="password"] {
-  max-width:400px;
-	width: 80%;
-  line-height:3em;
-  font-family: 'Ubuntu', sans-serif;
-  margin:1em 2em;
-  border-radius:5px;
-  border:2px solid #f2f2f2;
-  outline:none;
-  padding-left:10px;
-}
-.login-form input[type="button"] {
-  height:30px;
-  width:100px;
-  background:#fff;
-  border:1px solid #f2f2f2;
-  border-radius:20px;
-  color: slategrey;
-  text-transform:uppercase;
-  font-family: 'Ubuntu', sans-serif;
-  cursor:pointer;
-}
-.sign-up{
-  color:#f2f2f2;
-  margin-left:-70%;
-  cursor:pointer;
-  text-decoration:underline;
-}
-.no-access {
-  color:#E86850;
-  margin:20px 0px 20px -57%;
-  text-decoration:underline;
-  cursor:pointer;
-}
-.try-again {
-  color:#f2f2f2;
-  text-decoration:underline;
-  cursor:pointer;
-}
+      background: url('http://cdn.wallpapersafari.com/13/6/Mpsg2b.jpg');
+      margin: 0px;
+      font-family: 'Ubuntu', sans-serif;
+      background-size: 100% 110%;
+    }
 
-/*Media Querie*/
-@media only screen and (min-width : 150px) and (max-width : 530px){
-  .login-form h3 {
-    text-align:center;
-    margin:0;
-  }
-  .sign-up, .no-access {
-    margin:10px 0;
-  }
-  .login-button {
-    margin-bottom:10px;
-  }
-}
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    a {
+      margin: 0;
+      padding: 0;
+    }
+
+    .login {
+      margin: 0 auto;
+      max-width: 500px;
+    }
+
+    .login-header {
+      color: #black;
+      text-align: center;
+      font-size: 300%;
+    }
+
+    /* .login-header h1 {
+   text-shadow: 0px 5px 15px #000;
+   } */
+
+    .login-form {
+      border: .5px solid #black;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px #000;
+    }
+
+    .login-form h3 {
+      text-align: left;
+      margin-left: 40px;
+      color: #fff;
+    }
+
+    .login-form {
+      box-sizing: border-box;
+      padding-top: 15px;
+      padding-bottom: 10%;
+      margin: 5% auto;
+      text-align: center;
+    }
+
+    .login input[type="text"],
+    .login input[type="password"] {
+      max-width: 400px;
+      width: 80%;
+      line-height: 3em;
+      font-family: 'Ubuntu', sans-serif;
+      margin: 1em 2em;
+      border-radius: 5px;
+      border: 2px solid #black;
+      outline: none;
+      padding-left: 10px;
+    }
+
+    .login-form input[type="button"] {
+      height: 30px;
+      width: 100px;
+      background: #fff;
+      border: 1px solid #f2f2f2;
+      border-radius: 20px;
+      color: slategrey;
+      text-transform: uppercase;
+      font-family: 'Ubuntu', sans-serif;
+      cursor: pointer;
+    }
+
+    .sign-up {
+      color: #f2f2f2;
+      margin-left: -70%;
+      cursor: pointer;
+      text-decoration: underline;
+    }
+
+    .no-access {
+      color: #E86850;
+      margin: 20px 0px 20px -57%;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    .try-again {
+      color: #f2f2f2;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    /*Media Querie*/
+    @media only screen and (min-width : 150px) and (max-width : 530px) {
+      .login-form h3 {
+        text-align: center;
+        margin: 0;
+      }
+
+      .sign-up,
+      .no-access {
+        margin: 10px 0;
+      }
+
+      .login-button {
+        margin-bottom: 10px;
+      }
+    }
+
     * {
       box-sizing: border-box;
       font-family: ’Lato’, sans-serif;
@@ -174,7 +197,7 @@ h1, h2, h3, h4, h5, h6, a {
 
     @media only screen and (min-width: 77.5rem
 
-      /*1040px*/
+      /*1240px*/
     ) {
       .ft-main {
         justify-content: space-evenly;
@@ -208,17 +231,16 @@ h1, h2, h3, h4, h5, h6, a {
     .ft-social-list {
       display: flex;
       justify-content: center;
-      border-top: 1px #777 solid;
-      padding-top: 1.25rem;
+
     }
 
     .ft-social-list li {
-      margin: 0.5rem;
+
       font-size: 1.25rem;
     }
 
     .ft-legal {
-      padding: 0.9375rem 1.875rem;
+
       background-color: #333;
     }
 
@@ -229,7 +251,7 @@ h1, h2, h3, h4, h5, h6, a {
     }
 
     .ft-legal-list li {
-      margin: 0.125rem 0.625rem;
+
       white-space: nowrap;
     }
 
@@ -238,117 +260,212 @@ h1, h2, h3, h4, h5, h6, a {
       flex: 1;
       /* same as flex-grow: 1; */
     }
+
+
+
+
+
+
+    #lab_social_icon_footer a {
+      color: #333;
+    }
+
+    #lab_social_icon_footer .social:hover {
+      -webkit-transform: scale(1.1);
+      -moz-transform: scale(1.1);
+      -o-transform: scale(1.1);
+    }
+
+    #lab_social_icon_footer .social {
+      -webkit-transform: scale(0.8);
+      /* Browser Variations: */
+
+      -moz-transform: scale(0.8);
+      -o-transform: scale(0.8);
+      -webkit-transition-duration: 0.5s;
+      -moz-transition-duration: 0.5s;
+      -o-transition-duration: 0.5s;
+    }
+
+    /*
+    Multicoloured Hover Variations
+*/
+
+    #lab_social_icon_footer #social-fb:hover {
+      color: #abe411;
+    }
+
+    #lab_social_icon_footer #social-tw:hover {
+      color: #a5138d;
+    }
+
+    #lab_social_icon_footer #social-gp:hover {
+      color: #d34836;
+    }
+
+    #lab_social_icon_footer #social-em:hover {
+      color: #f39c12;
+    }
+
+    #lab_social_icon_footer .social:hover {
+      -webkit-transform: scale(1);
+      -moz-transform: scale(1);
+      -o-transform: scale(1);
+    }
+
+    #lab_social_icon_footer .social {
+      -webkit-transform: scale(0.8);
+      /* Browser Variations: */
+
+      -moz-transform: scale(0.8);
+      -o-transform: scale(0.8);
+      -webkit-transition-duration: 0.5s;
+      -moz-transition-duration: 0.5s;
+      -o-transition-duration: 0.5s;
+    }
+
+    /*
+    Multicoloured Hover Variations
+*/
+
+    #lab_social_icon_footer #social-fb:hover {
+      color: #3B5998;
+    }
+
+    #lab_social_icon_footer #social-tw:hover {
+      color: #4099FF;
+    }
+
+    #lab_social_icon_footer #social-gp:hover {
+      color: #d34836;
+    }
+
+    #lab_social_icon_footer #social-em:hover {
+      color: #f39c12;
+    }
+
+    .gradient {
+
+
+      background-color: #f9d1b7;
+      background-image: linear-gradient(315deg, #f9d1b7 0%, #f894a4 74%);
+
+    }
   </style>
 </head>
 
 <body>
-  <!--nav start-->
-  <nav class="navbar navbar-expand-lg navbar-fixed-top bg-dark navbar-dark">
-    <a class="navbar-brand" href="/">
-      <img class="site-logo" src="./image/logo-new.png" style='max-width:100px'>
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
-      aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item"><a href="./" class="nav-item nav-link active">Home</a></li>
-        <li class="nav-item"><a href="./classes.html" class="nav-item nav-link">Classes</a></li>
-        <li class="nav-item"><a href="./syllabus.html" class="nav-item nav-link">Syllabus</a></li>
-        <li class="nav-item"><a href="./about.html" class="nav-item nav-link">Contact Us</a></li>
-        <li class="nav-item"><a href="./login.html" class="nav-item nav-link">Login</a></li>
-      </ul>
+  <div class="gradient">
+    <!--nav start-->
+    <nav class="navbar navbar-expand-lg navbar-fixed-top bg-dark navbar-dark">
+      <a class="navbar-brand" href="/">
+        <img class="site-logo" src="./image/logo-new.png" style='max-width:100px'>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+        aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"><a href="./" class="nav-item nav-link active">Home</a></li>
+          <li class="nav-item"><a href="./classes.html" class="nav-item nav-link">Classes</a></li>
+          <li class="nav-item"><a href="./syllabus.html" class="nav-item nav-link">Syllabus</a></li>
+          <li class="nav-item"><a href="./about.html" class="nav-item nav-link">Contact Us</a></li>
+          <li class="nav-item"><a href="./login.html" class="nav-item nav-link">Login</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!--nav end-->
+    <!-- main start -->
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu:500' rel='stylesheet' type='text/css'>
+
+    <div class="login">
+      <div class="login-header">
+        <h1>Login</h1>
+      </div>
+      <div class="login-form">
+        <h3>Username:</h3>
+        <input type="text" placeholder="Username" /><br>
+        <h3>Password:</h3>
+        <input type="password" placeholder="Password" />
+        <br>
+        <input type="button" value="Login" class="login-button" />
+        <br>
+        <a class="sign-up">Sign Up!</a>
+        <br>
+        <h6 class="no-access">Can't access your account?</h6>
+      </div>
     </div>
-  </nav>
-  <!--nav end-->
-  <!-- main start -->
-  <link href='https://fonts.googleapis.com/css?family=Ubuntu:500' rel='stylesheet' type='text/css'>
+    <div class="error-page">
+      <div class="try-again">Error: Try again?</div>
+    </div>
 
-<div class="login">
-  <div class="login-header">
-    <h1>Login</h1>
+
+    <!-- footer -->
+    <!-- Footer -->
+    <footer>
+      <!-- Footer main -->
+      <section class="ft-main">
+        <div class="ft-main-item">
+          <h2 class="ft-title">About</h2>
+          <ul>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Customers</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+        <div class="ft-main-item">
+          <h2 class="ft-title">Resources</h2>
+          <ul>
+            <li><a href="#">Docs</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">eBooks</a></li>
+            <li><a href="#">Webinars</a></li>
+          </ul>
+        </div>
+        <div class="ft-main-item">
+          <h2 class="ft-title">Contact</h2>
+          <ul>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Sales</a></li>
+            <li><a href="#">Advertise</a></li>
+          </ul>
+        </div>
+        <div class="ft-main-item">
+          <h2 class="ft-title">Stay Updated</h2>
+          <p>Subscribe to our newsletter to get our latest news.</p>
+          <form>
+            <input type="email" name="email" placeholder="Enter email address">
+            <input type="submit" value="Subscribe">
+          </form>
+        </div>
+      </section>
+
+      <!-- Footer social -->
+      <section class="ft-social">
+        <ul class="ft-social-list">
+          <section id="lab_social_icon_footer">
+            <!-- Include Font Awesome Stylesheet in Header -->
+            <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+            <div class="container">
+              <div class="text-center center-block">
+                <a href="https://www.facebook.com/bootsnipp"><i id="social-fb"
+                    class="fa fa-facebook-square fa-3x social"></i></a>
+                <a href="https://twitter.com/bootsnipp"><i id="social-tw"
+                    class="fa fa-twitter-square fa-3x social"></i></a>
+                <a href="https://plus.google.com/+Bootsnipp-page"><i id="social-gp"
+                    class="fa fa-google-plus-square fa-3x social"></i></a>
+                <a href="mailto:#"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+              </div>
+            </div>
+          </section>
+        </ul>
+      </section>
   </div>
-  <div class="login-form">
-    <h3>Username:</h3>
-    <input type="text" placeholder="Username"/><br>
-    <h3>Password:</h3>
-    <input type="password" placeholder="Password"/>
-    <br>
-    <input type="button" value="Login" class="login-button"/>
-    <br>
-    <a class="sign-up">Sign Up!</a>
-    <br>
-    <h6 class="no-access">Can't access your account?</h6>
-  </div>
-</div>
-<div class="error-page">
-  <div class="try-again">Error: Try again?</div>
-</div>
+  <!-- Footer legal -->
 
-
-  <!-- footer -->
-  <!-- Footer -->
-  <footer>
-    <!-- Footer main -->
-    <section class="ft-main">
-      <div class="ft-main-item">
-        <h2 class="ft-title">About</h2>
-        <ul>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">Customers</a></li>
-          <li><a href="#">Careers</a></li>
-        </ul>
-      </div>
-      <div class="ft-main-item">
-        <h2 class="ft-title">Resources</h2>
-        <ul>
-          <li><a href="#">Docs</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">eBooks</a></li>
-          <li><a href="#">Webinars</a></li>
-        </ul>
-      </div>
-      <div class="ft-main-item">
-        <h2 class="ft-title">Contact</h2>
-        <ul>
-          <li><a href="#">Help</a></li>
-          <li><a href="#">Sales</a></li>
-          <li><a href="#">Advertise</a></li>
-        </ul>
-      </div>
-      <div class="ft-main-item">
-        <h2 class="ft-title">Stay Updated</h2>
-        <p>Subscribe to our newsletter to get our latest news.</p>
-        <form>
-          <input type="email" name="email" placeholder="Enter email address">
-          <input type="submit" value="Subscribe">
-        </form>
-      </div>
-    </section>
-
-    <!-- Footer social -->
-    <section class="ft-social">
-      <ul class="ft-social-list">
-        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-        <li><a href="#"><i class="fab fa-github"></i></a></li>
-        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-      </ul>
-    </section>
-
-    <!-- Footer legal -->
-    <section class="ft-legal">
-      <ul class="ft-legal-list">
-        <li><a href="#">Terms &amp; Conditions</a></li>
-        <li><a href="#">Privacy Policy</a></li>
-        <li>&copy; 2019 Copyright Nowrap Inc.</li>
-      </ul>
-    </section>
   </footer>
   <!-- Footer -->
 </body>
